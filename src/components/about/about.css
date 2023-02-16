@@ -1,0 +1,74 @@
+.about{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #fff;
+    padding: 80px 100px;
+    color: #000;
+}
+
+.about .content{
+    display: flex;
+    flex-direction: column;
+}
+.about .content .image{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.about .content .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .content .text{
+    padding-top: 2rem;
+    text-align: center;
+}
+.about .content .text p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.btn-about{
+    display: grid;
+    place-items: center;
+    padding-top: 2rem;
+}
+.btn-about .btn{
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #01d758;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+    transition: 0.7s ease-in;
+    -webkit-transition: 0.7s ease-in;
+    -moz-transition: 0.7s ease-in;
+    -ms-transition: 0.7s ease-in;
+    -o-transition: 0.7s ease-in;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btn-about .btn:hover{
+    background-color: #000;
+}
+
+@media (max-width: 1024px){
+    .about{
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width: 600px){
+    .about .content .text p{
+        font-size: 1rem;
+    }
+}

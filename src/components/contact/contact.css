@@ -1,0 +1,103 @@
+.contact{
+    width: 100%;
+    height: auto;
+    padding: 80px 100px;
+    position: relative;
+    background: #222;
+    color: #fff;
+    overflow: hidden;
+}
+
+.contact .title h1{
+    font-size: 3.5rem;
+}
+.contact .title p{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: rgba(255,255,255,0.5);
+}
+
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7%;
+}
+.social .left a{
+    color: blueviolet;
+    font-size: 2rem;
+    transition: 0.7s ease-in;
+    -webkit-transition: 0.7s ease-in;
+    -moz-transition: 0.7s ease-in;
+    -ms-transition: 0.7s ease-in;
+    -o-transition: 0.7s ease-in;
+}
+.social .left a:hover{
+    text-decoration: 1px underline #fff;
+}
+.social .right ul{
+    display: flex;
+    position: relative;
+}
+.social .right ul li{
+    display: inline-block;
+}
+.social .right ul li a{
+    display: inline-block;
+    color: rgba(255,255,255,0.5);
+    font-size: 1.5rem;
+    margin-left: 20px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+.social .right ul li a:hover{
+    color: #fff;
+}
+
+
+.footer{
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+    font-size: 1rem;
+    padding-top: 7%;
+}
+.footer .credit{
+    padding-top: 10px;
+}
+
+
+@media (max-width: 1024px){
+    .contact{
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .contact .title h1{
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 600px){
+    .contact .title h1{
+        font-size: 2rem;
+    }
+    .contact .title p{
+        font-size: 1rem;
+    }
+    .social .left a{
+        font-size: 1.3rem;
+    }
+    .social .right{
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+    }
+
+    .social, .footer{
+        padding-top: 15%;
+    }
+}

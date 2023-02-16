@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+.home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #fff;
+    padding: 80px 100px;
+    color: #000;
+    overflow: hidden;
+}
+.home .content{
+    display: grid;
+    place-items: center;
+}
+
+.home .logo{
+    display: grid;
+    place-items: center;
+    color: #6d6d6d;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+.home .logo h4{
+    font-family: "Hachi Maru Pop", serif;
+    font-size: 2.5rem;
+}
+
+
+.home .content h2, .home .content .title{
+    padding-top: 50px;
+    text-align: center;
+}
+.home .content h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.home .content .title{
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    color: #01d758;
+}
+.home .content .title span{
+    color: #4169e1;
+}
+
+
+@media (max-width: 1024px){
+    .home{
+        padding: 80px 20px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .home .logo h4{
+        font-size: 1.8rem;
+    }
+    .home .content h2{
+        font-size: 2.5rem;
+    }
+    .home .content .title{
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 600px){
+    .home .logo h4{
+        font-size: 1.2rem;
+    }
+    .home .content h2{
+        font-size: 1.8rem;
+    }
+    .home .content .title{
+        font-size: 2rem;
+    }
+}
